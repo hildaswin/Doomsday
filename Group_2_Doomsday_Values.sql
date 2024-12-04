@@ -29,6 +29,7 @@ VALUES
     ('LO0006',	'Ciudad de la Muerte',	'LT0001',	43.26197918,	-5.307890758,	NULL,		0,	'2045-12-20');
 
 -- Water CB 
+-- water key formatted as 'WA0000'
 
 -- Factions IA
 
@@ -69,24 +70,33 @@ VALUES
     ('FA0006',	'FA0003',	'Enemies');
 
 -- Power Type IA
+-- power type key formatted as 'PT0000'
 
 -- Power IA
+-- power key formatted as 'PO0000'
 
 -- Lodging CB
+-- lodging key formatted as 'LD0000'
 
 -- Virus CB 
+-- virus key formatted as 'VT0000'
 
 -- Virus Transmissions CB
+-- transmission method key formatted as 'TM0000'
 
 -- Virus Transmission Details CB
 
 -- Role Types AH
+-- role types key formatted as 'RT0000'
 
 -- Work Roles AH
+-- work roles key formatted as 'WR0000'
 
 -- People LR
+-- people key formatted as 'PE0000'
 
 -- Zombies LR
+-- zombie key formatted as 'ZM0000'
 
 -- Plants AB
 
@@ -231,6 +241,7 @@ VALUES
 -- Inventory LR
 
 -- Ammo AB
+-- ammo key formatted as 'AM0000'
 
 -- Weapon Ammo AB
 
