@@ -29,7 +29,7 @@ VALUES
     ('LO0006',	'Ciudad de la Muerte',	'LT0001',	43.26197918,	-5.307890758,	NULL,		0,	'2045-12-20');
 
 -- Water CB 
--- water key formatted as 'WA0000' Base4C&P:('WA0000', 'Name', 0, 0, 'LO0006'),
+-- water key formatted as 'WA0000'
 INSERT INTO Water
 VALUES
 	('WA0001', 'Hocking River', 1, 4, 'LO0001'),
@@ -111,6 +111,50 @@ VALUES
 
 -- Lodging CB
 -- lodging key formatted as 'LD0000'
+INSERT INTO Lodging
+VALUES
+	('LD0001', 'Stanbery High School', 'LO0001', 7),
+	('LD0002', 'St. Peter''s Lutheran Church', 'LO0001', 6),
+	('LD0003', 'Fairfield Metropolitan Housing', 'LO0001', 8),
+	('LD0004', 'East Main Shopping Center', 'LO0001', 8),
+	('LD0005', 'The Fairmore Center', 'LO0001', 9),
+	('LD0006', 'Lancaster High School', 'LO0001', 7),
+	('LD0007', 'Ohio University Lancaster', 'LO0001', 9),
+	('LD0008', 'Fairfield County Infirmary', 'LO0001', 5),
+	('LD0009', 'Fairfield Christian Church', 'LO0001', 6),
+	('LD0010', 'River Valley Mall', 'LO0001', 8),
+	('LD0011', 'River Valley Apartments', 'LO0001', 10),
+	('LD0012', 'Buckingham Palace', 'LO0002', 10),
+	('LD0013', 'Kensington Palace', 'LO0002', 10),
+	('LD0014', 'The British Museum', 'LO0002', 5),
+	('LD0015', 'University of London', 'LO0002', 9),
+	('LD0016', 'St Saviours Estate', 'LO0002', 10),
+	('LD0017', 'St. Paul''s Cathedral', 'LO0002', 7),
+	('LD0018', 'Somerset House', 'LO0002', 4),
+	('LD0019', 'St Thomas'' Hospital', 'LO0002', 9),
+	('LD0020', 'Silverlock Medical Centre', 'LO0002', 7),
+	('LD0021', 'Tower of London', 'LO0002', 9),
+	('LD0022', 'Empire State Building', 'LO0003', 8),
+	('LD0023', 'VU New York Condominiums', 'LO0003', 10),
+	('LD0024', 'The Fifth Avenue Hotel', 'LO0003', 10),
+	('LD0025', 'The Ned NoMade', 'LO0003', 10),
+	('LD0026', 'Made Hotel', 'LO0003', 10),
+	('LD0027', 'Walker Hotel Greenwich Village', 'LO0003', 10),
+	('LD0028', 'Flatiron Building', 'LO0003', 9),
+	('LD0029', 'Lexington Parc Condominium', 'LO0003', 10),
+	('LD0030', 'Merrion Row Hotel and Public House', 'LO0003', 10),
+	('LD0031', 'Hotel Scherman', 'LO0003', 10),
+	('LD0032', 'The Art Institute of Chicago', 'LO0004', 4),
+	('LD0033', 'Thalia Hall', 'LO0004', 3),
+	('LD0034', 'Museum Park Place', 'LO0004', 8),
+	('LD0035', 'Adler Place Luxury Condos', 'LO0004', 10),
+	('LD0036', 'Prairie Pointe Apartments', 'LO0004', 10),
+	('LD0037', 'The Grant Luxury Condos', 'LO0004', 10),
+	('LD0038', 'Soldier Field', 'LO0004', 2),
+	('LD0039', 'Martha Washington Apartments', 'LO0004', 10),
+	('LD0040', 'Newton Bateman Elementary School', 'LO0004', 4),
+	('LD0041', 'North Park Village Apartments', 'LO0004', 10)
+;
 
 -- Virus CB 
 -- virus key formatted as 'VT0000'
