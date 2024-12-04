@@ -29,7 +29,41 @@ VALUES
     ('LO0006',	'Ciudad de la Muerte',	'LT0001',	43.26197918,	-5.307890758,	NULL,		0,	'2045-12-20');
 
 -- Water CB 
--- water key formatted as 'WA0000'
+-- water key formatted as 'WA0000' Base4C&P:('WA0000', 'Name', 0, 0, 'LO0001'),
+INSERT INTO Water
+VALUES
+	('WA0000', 'Hocking River', 1, 4, 'LO0001'),
+	('WA0000', 'Rising Park', 1, 1, 'LO0001'),
+	('WA0000', 'Cenci Lake', 3, 2, 'LO0001'),
+	('WA0000', 'Lakeview RV Park', 3, 5, 'LO0001'),
+	('WA0000', 'Lake Lukinston', 2, 4, 'LO0001'),
+	('WA0000', 'Baldwin Run', 1, 2, 'LO0001'),
+	('WA0000', 'Pleasant Run', 1, 2, 'LO0001'),
+	('WA0000', 'River Thames', 2, 10, 'LO0002'),
+	('WA0000', 'Round Pond', 1, 1, 'LO0002'),
+	('WA0000', 'The Long Water', 2, 3, 'LO0002'),
+	('WA0000', 'St. James''s Park Lake', 0, 0, 'LO0002'),
+	('WA0000', 'Regent''s Canal', 3, 8, 'LO0002'),
+	('WA0000', 'Ladies Pond', 1, 4, 'LO0002'),
+	('WA0000', 'Hudson River', 7, 10, 'LO0003'),
+	('WA0000', 'Ohrbach Lake', 4, 4, 'LO0003'),
+	('WA0000', 'Grasmere Lake', 3, 5, 'LO0003'),
+	('WA0000', 'Cameron Lake', 2, 3, 'LO0003'),
+	('WA0000', 'Silver Lake', 4, 5, 'LO0003'),
+	('WA0000', 'Goethals Pond Complex', 1, 2, 'LO0003'),
+	('WA0000', 'Old Place Creek Tidal Wetlands Area', 1, 5, 'LO0003'),
+	('WA0001', 'Lake Michigan', 9, 10, 'LO0004'),
+	('WA0002', 'Calumet River', 6, 10, 'LO0004'),
+	('WA0003', 'Chicago River', 7, 10, 'LO0004'),
+	('WA0001', 'South Lagooon', 4, 10, 'LO0004'),
+	('WA0001', 'North Pond', 1, 5, 'LO0004'),
+	('WA0001', 'Lake Victory', 3, 5, 'LO0004'),
+	('WA0001', 'Peaceful Lake', 1, 2, 'LO0004'),
+	('WA0001', 'Marquette Lagoon', 2, 4, 'LO0004'),
+	('WA0001', 'Des Plaines River', 7, 10, 'LO0004'),
+	('WA0001', 'Salt Creek', 4, 10, 'LO0004'),
+	('WA0001', 'Bubbly Creek', 6, 10, 'LO0004'),
+;
 
 -- Factions IA
 
