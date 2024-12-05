@@ -72,8 +72,31 @@ VALUES
 -- Power Type IA
 -- power type key formatted as 'PT0000'
 
+INSERT INTO PowerType
+VALUES
+    ('PT0001', 'Solar'),
+    ('PT0002', 'Wind'),
+    ('PT0003', 'Hydro'),
+    ('PT0004', 'Nuclear'),
+    ('PT0005', 'Coal'),
+    ('PT0006', 'Geothermal'),
+    ('PT0007', 'Battery'),
+    ('PT0008', 'Biomass');
+
 -- Power IA
 -- power key formatted as 'PO0000'
+
+INSERT INTO Power
+VALUES
+    ('PO0001', 'PT0001', 'LO0001', 'Operational', '2046-01-15'),
+    ('PO0002', 'PT0002', 'LO0002', 'Needs Repair', '2045-12-01'),
+    ('PO0003', 'PT0003', 'LO0003', 'Inactive', NULL),
+    ('PO0004', 'PT0004', 'LO0004', 'Unknown', NULL),
+    ('PO0005', 'PT0005', 'LO0005', 'Operational', '2046-03-10'),
+    ('PO0006', 'PT0006', 'LO0006', 'Needs Repair', '2046-02-25'),
+    ('PO0007', 'PT0007', 'LO0005', 'Operational', '2046-04-01'),
+    ('PO0008', 'PT0008', 'LO0001', 'Inactive', '2046-01-20');
+
 
 -- Lodging CB
 -- lodging key formatted as 'LD0000'
