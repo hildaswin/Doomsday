@@ -188,8 +188,76 @@ VALUES
 
 -- Virus Transmissions CB
 -- transmission method key formatted as 'TM0000'
+INSERT INTO VirusTransmission
+VALUES
+	('TM0001', 'Contact with infected blood.'),
+	('TM0002', 'Contact with infected skin.'),
+	('TM0003', 'Contact with object recently in contact of an infected.'),
+	('TM0004', 'Consuming infected meat.'),
+	('TM0005', 'Drinking infected water.'),
+	('TM0006', 'Respiratory/Droplet Transmission.'),
+	('TM0007', 'Airborne Transmission.'),
+	('TM0008', 'Bite Transmission.'),
+	('TM0009', 'Blood Transfusion.')
+;
 
 -- Virus Transmission Details CB
+INSERT INTO VirusTransmissionDetails
+VALUES
+	('VT0001', 'TM0002'),
+	('VT0001', 'TM0003'),
+	('VT0001', 'TM0004'),
+	('VT0001', 'TM0005'),
+	('VT0002', 'TM0004'),
+	('VT0003', 'TM0004'),
+	('VT0003', 'TM0008'),
+	('VT0003', 'TM0009'),
+	('VT0004', 'TM0002'),
+	('VT0005', 'TM0004'),
+	('VT0005', 'TM0009'),
+	('VT0006', 'TM0004'),
+	('VT0007', 'TM0004'),
+	('VT0007', 'TM0008'),
+	('VT0008', 'TM0002'),
+	('VT0008', 'TM0009'),
+	('VT0009', 'TM0004'),
+	('VT0009', 'TM0008'),
+	('VT0010', 'TM0004'),
+	('VT0010', 'TM0006'),
+	('VT0011', 'TM0007'),
+	('VT0012', 'TM0001'),
+	('VT0012', 'TM0004'),
+	('VT0012', 'TM0009'),
+	('VT0013', 'TM0009'),
+	('VT0014', 'TM0004'),
+	('VT0014', 'TM0009'),
+	('VT0015', 'TM0006'),
+	('VT0015', 'TM0007'),
+	('VT0015', 'TM0009'),
+	('VT0016', 'TM0001'),
+	('VT0016', 'TM0009'),
+	('VT0017', 'TM0004'),
+	('VT0018', 'TM0002'),
+	('VT0018', 'TM0003'),
+	('VT0018', 'TM0006'),
+	('VT0018', 'TM0007'),
+	('VT0019', 'TM0004'),
+	('VT0019', 'TM0009'),
+	('VT0020', 'TM0001'),
+	('VT0020', 'TM0002'),
+	('VT0020', 'TM0003'),
+	('VT0020', 'TM0009'),
+	('VT0021', 'TM0004'),
+	('VT0021', 'TM0008'),
+	('VT0022', 'TM0008'),
+	('VT0022', 'TM0009'),
+	('VT0023', 'TM0001'),
+	('VT0023', 'TM0005'),
+	('VT0023', 'TM0008'),
+	('VT0023', 'TM0009'),
+	('VT0024', 'TM0006'),
+	('VT0024', 'TM0007'),
+;
 
 -- Role Types AH
 -- role types key formatted as 'RT0000'
