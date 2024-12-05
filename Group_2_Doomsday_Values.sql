@@ -42,7 +42,7 @@ VALUES
 	('WA0008', 'River Thames', 2, 10, 'LO0002'),
 	('WA0009', 'Round Pond', 1, 1, 'LO0002'),
 	('WA0010', 'The Long Water', 2, 3, 'LO0002'),
-	('WA0011', 'St. James''s Park Lake', 0, 0, 'LO0002'),
+	('WA0011', 'St. James''s Park Lake', 2, 3, 'LO0002'),
 	('WA0012', 'Regent''s Canal', 3, 8, 'LO0002'),
 	('WA0013', 'Ladies Pond', 1, 4, 'LO0002'),
 	('WA0014', 'Hudson River', 7, 10, 'LO0003'),
@@ -256,7 +256,7 @@ VALUES
 	('VT0023', 'TM0008'),
 	('VT0023', 'TM0009'),
 	('VT0024', 'TM0006'),
-	('VT0024', 'TM0007'),
+	('VT0024', 'TM0007')
 ;
 
 -- Role Types AH
