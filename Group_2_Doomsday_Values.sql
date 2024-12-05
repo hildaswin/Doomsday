@@ -158,6 +158,33 @@ VALUES
 
 -- Virus CB 
 -- virus key formatted as 'VT0000'
+INSERT INTO Virus
+VALUES
+	('VT0001', 'Kharaa', 'Small green glowing blisters appear.', 'Fishes of the Great Barrier Reef', 6),
+	('VT0002', 'Gandaris', 'Increased leg endurance.', 'Horses of North America', 2),
+	('VT0003', 'Otaundi', 'Yellow sclera.', 'Bats of Malaysia.', 1),
+	('VT0004', 'Eel''s Touch', 'Prone to static electricity.', 'Eels of the Amazon River.', 6),
+	('VT0005', 'Calrhagia', 'Clots form faster leading to faster healing time and higher risk of blood clots.', 'Alien Parasite of Canada.', 7),
+	('VT0006', 'Halluci', 'Increased frequency of hallucinations over time.', 'Cuttlefish of the Pacific', 5),
+	('VT0007', 'Astiones', 'Acidic saliva.', 'Centipedes of Eurasia.', 7),
+	('VT0008', 'Bleeding Sheep', 'Thinner skin, more prone to cuts.', 'Frogs of South America.', 6),
+	('VT0009', 'Crazy Marco', 'Increased activity of the thyroid gland, leading to restlessness.', 'Alien Parasite of El Salvador.', 7),
+	('VT0010', 'Faminia', 'Stomach empties quicker than normal, leading to increased hunger.', 'Deers of North America.', 5),
+	('VT0011', 'Lich''s Hand', 'Prone to cold temperatures.', 'Alien Parasite of Siberia.', 7),
+	('VT0012', 'Fire Virus', 'Skin becomes more resistant to fire.', 'Long-Toed Salamanders of California.', 2),
+	('VT0013', 'Stomidia', 'Stomach acid is constantly produced.', 'Vultures of Africa and Eurasia.', 9),
+	('VT0014', 'Jumper Boon', 'Leg muscles easily grow stronger.', 'Rabbits of Europe.', 1),
+	('VT0015', 'Thirst Virus', 'Body dehydrates at a slower rate.', 'Camels of Sahara.', 1),
+	('VT0016', 'Tormenting Breath', 'Lung air sacs collapses over time.', 'Alien parasite of Indonesia.', 9),
+	('VT0017', 'Panda Curse', 'Increased fatigue frequency.', 'Pandas of China.', 6),
+	('VT0018', 'Mycellid', 'Spore bulbs with stem starts to grow on skin.', 'Alien parasite of Oregon.', 8),
+	('VT0019', 'Armori', 'Thicker skin, less prone to cuts.', 'Rhinoceros', 1),
+	('VT0020', 'Viralysis', 'Skin breaks down, eventually leading the victim skinless.', 'Alien Parasite of Germany.', 9),
+	('VT0021', 'Digero', 'Decreased ability of digestive system to absorb nutrients.', 'Variant of VT0010', 8),
+	('VT0022', 'Coaguliro', 'Blood becomes thicker.', 'Variant of VT0005', 9),
+	('VT0023', 'Crystemia', 'Blood crystallizes.', 'Variant of VT0005', 10),
+	('VT0024', 'Sleeping Beauty Virus', 'Increased frequency and duration of sleepwalking episodes.', 'Alien Parasite of Michigan.', 4)
+;
 
 -- Virus Transmissions CB
 -- transmission method key formatted as 'TM0000'
