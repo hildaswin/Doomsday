@@ -98,14 +98,14 @@ CREATE TABLE Virus(
 
 -- Virus Transmission CB
 
-CREATE TABLE VirusTransmission(
+CREATE TABLE TransmissionMethod(
     transmissionMethodKey VARCHAR(8) PRIMARY KEY NOT NULL,
     transmissionMethod VARCHAR(100) UNIQUE NOT NULL
 );
 
 -- Virus Transmission Details CB
 
-CREATE TABLE VirusTransmissionDetails(
+CREATE TABLE VirusTransmissionMethod(
     virusKey VARCHAR(8) NOT NULL FOREIGN KEY REFERENCES Virus(virusKey),
     transmissionMethodKey VARCHAR(8) NOT NULL FOREIGN KEY REFERENCES VirusTransmission(transmissionMethodKey)
 );
