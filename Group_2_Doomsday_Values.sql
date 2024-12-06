@@ -211,7 +211,7 @@ VALUES
 
 -- Virus Transmissions CB
 -- transmission method key formatted as 'TM0000'
-INSERT INTO VirusTransmission
+INSERT INTO TransmissionMethod
 VALUES
 	('TM0001', 'Contact with infected blood.'),
 	('TM0002', 'Contact with infected skin.'),
@@ -225,7 +225,7 @@ VALUES
 ;
 
 -- Virus Transmission Details CB
-INSERT INTO VirusTransmissionDetails
+INSERT INTO VirusTransmissionMethod
 VALUES
 	('VT0001', 'TM0002'),
 	('VT0001', 'TM0003'),

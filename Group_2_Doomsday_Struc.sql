@@ -107,7 +107,7 @@ CREATE TABLE TransmissionMethod(
 
 CREATE TABLE VirusTransmissionMethod(
     virusKey VARCHAR(8) NOT NULL FOREIGN KEY REFERENCES Virus(virusKey),
-    transmissionMethodKey VARCHAR(8) NOT NULL FOREIGN KEY REFERENCES VirusTransmission(transmissionMethodKey)
+    transmissionMethodKey VARCHAR(8) NOT NULL FOREIGN KEY REFERENCES TransmissionMethod(transmissionMethodKey)
 );
 
 -- Role Types AH
