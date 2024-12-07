@@ -25,7 +25,7 @@ VALUES
     ('LO0002',	'London',	'LT0001',	51.51784548,	-0.120833083,	NULL,		0,	'2046-01-10'),
     ('LO0003',	'New York',	'LT0001',	40.72391574,	-73.98861745,	NULL,		0,	'2046-04-11'),
     ('LO0004',	'Chicago',	'LT0001',	41.87299696,	-87.63996336,	NULL,		0,	'2045-12-06'),
-    ('LO0005',	'Novak',	'LT0001',	35.82749019,	-114.9364581,	NULL,		1,	'2046-04-11'),
+    ('LO0005',	'Novac',	'LT0001',	35.82749019,	-114.9364581,	NULL,		1,	'2046-04-11'),
     ('LO0006',	'Ciudad de la Muerte',	'LT0001',	43.26197918,	-5.307890758,	NULL,		0,	'2045-12-20');
 
 -- Water CB 
@@ -75,7 +75,7 @@ VALUES
     ('FA0004',	'Farmers Against Zombies!',	5,	'LO0005'),
     ('FA0005',	'Lawyers Against Zombies!',	1,	'LO0004'),
     ('FA0006',	'Las Plagas',	6,	'LO0006'),
-    ('FA0007',	'Community of Novak',	4,	'LO0005'),
+    ('FA0007',	'Community of Novac',	4,	'LO0005'),
     ('FA0008',	'The Guild',	7,	'LO0005');
 
 -- Alliances IA
@@ -206,7 +206,8 @@ VALUES
 	('VT0021', 'Digero', 'Decreased ability of digestive system to absorb nutrients.', 'Variant of VT0010', 8),
 	('VT0022', 'Coaguliro', 'Blood becomes thicker.', 'Variant of VT0005', 9),
 	('VT0023', 'Crystemia', 'Blood crystallizes.', 'Variant of VT0005', 10),
-	('VT0024', 'Sleeping Beauty Virus', 'Increased frequency and duration of sleepwalking episodes.', 'Alien Parasite of Michigan.', 4)
+	('VT0024', 'Sleeping Beauty Virus', 'Increased frequency and duration of sleepwalking episodes.', 'Alien Parasite of Michigan.', 4),
+    ('VT0025', 'Las Plagas Parasite', 'Complete takeover by the hive', 'Las Plagas Cult', 7)
 ;
 
 -- Virus Transmissions CB
@@ -279,7 +280,8 @@ VALUES
 	('VT0023', 'TM0008'),
 	('VT0023', 'TM0009'),
 	('VT0024', 'TM0006'),
-	('VT0024', 'TM0007')
+	('VT0024', 'TM0007'),
+    ('VT0025', 'TM0009')
 ;
 
 -- Role Types AH
@@ -468,9 +470,24 @@ VALUES
     ('IT0033',	'TK0007',	'Blazer',	                'Some rips and tears, but perfect for completing business.'),
     ('IT0034',	'TK0007',	'Dress Shoes',	            'Some rips and tears, but perfect for completing business.'),
     ('IT0035',	'TK0010',	'Mixed Seeds Packets',   	'No idea what these might contain.'),
-    ('IT0036',	'TK0010',	'Bobby Pin',                 'Could be used for hair. Might be able to pick a lock with the right skills...'),
+    ('IT0036',	'TK0010',	'Bobby Pin',                 'Could be used for hair. Might be able to pick a lock with the right skills...')
     ('IT0037',  'TK0008',       'Rum',                       'qty in oz'),
-    ('IT0038',  'TK0008',       'Rubbing Alcohol',           'qty in oz');
+    ('IT0038',  'TK0008',       'Rubbing Alcohol',           'qty in oz'),
+    ('IT0039', 	'TK0001',	'Fresh Potatoes',	NULL),
+    ('IT0040', 	'TK0001',	'Fresh Carrots',	NULL),
+    ('IT0041', 	'TK0001',	'Fresh Green Beans',	NULL),
+    ('IT0042', 	'TK0001',	'Fresh Peas',	NULL),
+    ('IT0043', 	'TK0001',	'Fresh Lettuce',	NULL),
+    ('IT0044', 	'TK0001',	'Fresh Tomatoes',	NULL),
+    ('IT0045', 	'TK0001',	'Fresh Chives',	NULL),
+    ('IT0046', 	'TK0001',	'Fresh Basil',	NULL),
+    ('IT0047', 	'TK0001',	'Fresh Spinach',	NULL),
+    ('IT0048', 	'TK0001',	'Fresh Strawberries',	NULL),
+    ('IT0049', 	'TK0001',	'Fresh Cabbage',	NULL),
+    ('IT0050', 	'TK0001',	'Wheat',	NULL),
+    ('IT0051', 	'TK0001',	'Fresh Corn',	NULL),
+    ('IT0052', 	'TK0001',	'Fresh Bell Pepper',	NULL);
+    
 
 -- Inventory LR
 
