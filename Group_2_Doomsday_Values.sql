@@ -327,10 +327,74 @@ VALUES
     ('WR0021', 'RT0008', 'Scientist', 'Studies the Zombie virus looking for a cure.');
 
 -- People LR
--- people key formatted as 'PE0000'
+
+INSERT INTO People
+VALUES
+    ('PE0001',	'Carter',	'Jo',	21,	'FA0002',	'WR0014'),
+    ('PE0002',	'Debby',	NULL,	35,	'FA0008',	'WR0008'),
+    ('PE0003',	'Cassy',	'Porter',	64,	NULL,	NULL),
+    ('PE0004',	'Patty',	'Tamsin',	NULL,	'FA0008',	'WR0011'),
+    ('PE0005',	'Jaimie',	NULL,	23,	NULL	NULL),
+    ('PE0006',	'Cali',	'Cher',	45,	'FA0002',	'WR0015'),
+    ('PE0007',	'Ash',	'Williams',	NULL,	NULL,	NULL),
+    ('PE0008',	'Al',	NULL,	41,	'FA0004',	'WR0004'),
+    ('PE0009',	'Jill',	'Valentine',	49,	'FA0003',	'WR0018'),
+    ('PE0010',	'Felix',	'Livy',	24,	'FA0008',	'WR0021'),
+    ('PE0011',	'Merv',	'Wallace',	NULL,	'FA0002',	'WR0015'),
+    ('PE0012',	'Chris',	'Redfield',	50,	'FA0003',	'WR0019'),
+    ('PE0013',	'Gilbert',	'Hewie',	23,	'FA0004',	'WR0004'),
+    ('PE0014',	'Winfred',	NULL,	57,	'FA0005',	NULL),
+    ('PE0015',	'Lynnette',	'Hal',	NULL,	'FA0004',	'WR0005'),
+    ('PE0016',	'Leon',	'Kennedy',	47,	'FA0003',	'WR0018'),
+    ('PE0017',	'Bart',	'Aura',	34,	'FA0004',	'WR0004'),
+    ('PE0018',	'Barry',	NULL,	24,	'FA0002',	'WR0015'),
+    ('PE0019',	'Nolan',	'Velvet',	NULL,	'FA0004',	'WR0004'),
+    ('PE0020',	'Craig',	'Boone',	NULL,	'FA0007',	'WR0018'),
+    ('PE0021',	'Manny',	'Vargas',	NULL,	'FA0007',	'WR0017'),
+    ('PE0022',	'Courtney',	'Sheryl',	24,	'FA0004',	'WR0005'),
+    ('PE0023',	'Brooke',	'Benny',	34,	'FA0005',	NULL),
+    ('PE0024',	'Fisher',	'Tripp',	NULL,	NULL,	NULL),
+    ('PE0025',	'Clifton',	NULL,	35,	'FA0008',	'WR0007'),
+    ('PE0026',	'Amy',	'Matt',	42,	'FA0002',	'WR0014'),
+    ('PE0027',	'Billy',	NULL,	NULL,	NULL,	NULL),
+    ('PE0028',	'Henry',	'Elton',	34,	'FA0008',	'WR0001'),
+    ('PE0029',	'Craig',	'Mariah',	NULL,	'FA0008',	'WR0003'),
+    ('PE0030',	'Wendell',	NULL,	24,	'FA0002',	'WR0014');
 
 -- Zombies LR
--- zombie key formatted as 'ZM0000'
+
+INSERT INTO Zombies
+VALUES
+    ('ZM0001',	'Test Subject #1',	NULL,	NULL,	NULL,	'VT0013'),
+    ('ZM0002',	'Kai',	NULL,	NULL,	NULL,	NULL),
+    ('ZM0003',	'Jon',	NULL,	NULL,	'FA0006',	'VT0025'),
+    ('ZM0004',	'Kyrie',	NULL,	24,	NULL,	'VT0001'),
+    ('ZM0005',	'Trace',	NULL,	NULL,	'FA0001',	NULL),
+    ('ZM0006',	'John',	NULL,	57,	'FA0006',	'VT0025'),
+    ('ZM0007',	'Delano',	'Joy',	53,	NULL,	NULL),
+    ('ZM0008',	'Test Subject #2',	NULL,	NULL,	NULL,	'VT0003'),
+    ('ZM0009',	'Clancy',	NULL,	NULL,	'FA0001',	'VT0023'),
+    ('ZM0010',	'Heidi',	NULL,	12,	NULL,	'VT0001'),
+    ('ZM0011',	'Billy',	'Jon',	NULL,	NULL,	'VT0018'),
+    ('ZM0012',	'Ed',	NULL,	NULL,	'FA0006',	'VT0025'),
+    ('ZM0013',	'Dortha',	NULL,	NULL,	NULL,	NULL),
+    ('ZM0014',	'Ursula',	NULL,	24,	NULL,	'VT0018'),
+    ('ZM0015',	'Don',	NULL,	35,	NULL,	'VT0001'),
+    ('ZM0016',	'Paul',	NULL,	NULL,	'FA0001',	'VT0018'),
+    ('ZM0017',	'Bill',	NULL,	NULL,	NULL,	NULL),
+    ('ZM0018',	'Quin',	NULL,	NULL,	NULL,	'VT0003'),
+    ('ZM0019',	'Misty',	NULL,	NULL,	NULL,	NULL),
+    ('ZM0020',	'Test Subject #3',	NULL,	NULL,	'FA0006',	'VT0025'),
+    ('ZM0021',	'Corn',	'Cate',	NULL,	NULL,	NULL),
+    ('ZM0022',	'Davis',	NULL,	NULL,	NULL,	'VT0013'),
+    ('ZM0023',	'Georgia',	NULL,	54,	'FA0001',	'VT0001'),
+    ('ZM0024',	'Miss',	'Zip',	NULL,	NULL,	'VT0018'),
+    ('ZM0025',	'Test Subject #4',	NULL,	NULL,	NULL,	NULL),
+    ('ZM0026',	'Faron',	NULL,	NULL,	'FA0006',	'VT0025'),
+    ('ZM0027',	'Gretty',	NULL,	NULL,	NULL,	'VT0013'),
+    ('ZM0028',	'Ned',	'Mil',	NULL,	NULL,	NULL),
+    ('ZM0029',	'Test Subject #5',	NULL,	NULL,	'FA0001',	'VT0001'),
+    ('ZM0030',	'Jax',	NULL,	NULL,	NULL,	NULL);
 
 -- Plants AB
 
