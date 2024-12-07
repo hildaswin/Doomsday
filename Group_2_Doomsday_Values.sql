@@ -334,7 +334,7 @@ VALUES
     ('PE0002',	'Debby',	NULL,	35,	'FA0008',	'WR0008'),
     ('PE0003',	'Cassy',	'Porter',	64,	NULL,	NULL),
     ('PE0004',	'Patty',	'Tamsin',	NULL,	'FA0008',	'WR0011'),
-    ('PE0005',	'Jaimie',	NULL,	23,	NULL	NULL),
+    ('PE0005',	'Jaimie',	NULL,	23,	NULL,	NULL),
     ('PE0006',	'Cali',	'Cher',	45,	'FA0002',	'WR0015'),
     ('PE0007',	'Ash',	'Williams',	NULL,	NULL,	NULL),
     ('PE0008',	'Al',	NULL,	41,	'FA0004',	'WR0004'),
@@ -557,7 +557,7 @@ VALUES
     ('IT0056',	'TK0002',	'Assault Rifle',	        'A fully-automatic military rifle.'),
     ('IT0057',	'TK0002',	'Revolver',	                'Pretty big for a handgun.'),
     ('IT0058',	'TK0002',	'Sniper Rifle',	            'Huge in both size and caliber, and impractical for most situations.'),
-    ('IT0059'   'TK0004',   'First Aid Kit',            'Standard first aid kit.');
+    ('IT0059',   'TK0004',   'First Aid Kit',            'Standard first aid kit.');
     
 
 -- Inventory LR
