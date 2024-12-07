@@ -323,8 +323,8 @@ VALUES
     ('WR0018', 'RT0007', 'Major', 'The second-in-command. Trains and leads the soldiers.'),
     ('WR0019', 'RT0007', 'General', 'The highest rank in the military.'),
     ('WR0020', 'RT0008', 'Council', 'An elected member of a group that makes laws and major decisions.'),
-    ('WR0020', 'RT0008', 'Judge', 'An elected member who presides over court proceedings.'),
-    ('WR0021', 'RT0008', 'Scientist', 'Studies the Zombie virus looking for a cure.');
+    ('WR0021', 'RT0008', 'Judge', 'An elected member who presides over court proceedings.'),
+    ('WR0022', 'RT0008', 'Scientist', 'Studies the Zombie virus looking for a cure.');
 
 -- People LR
 -- people key formatted as 'PE0000'
@@ -505,15 +505,15 @@ VALUES
 	('AM0002', 'Steel Ball'),
 	('AM0003', '12-Gauge Buckshot'),
 	('AM0004', '12-Gauge Slug'),
-	('AM0005', '9mm Cartridge'),
-	('AM0006', '.45 ACP Cartridge'),
-	('AM0007', '5.56x45mm Cartridge'),
-	('AM0008', '7.62x39mm Cartridge'),
-	('AM0009', '.308 Winchester Cartridge'),
-	('AM0010', '.30-06 Cartridge'),
-	('AM0011', '.357 Magnum Cartridge'),
-	('AM0012', '.45 Magnum Cartridge'),
-	('AM0013', '.50 BMG Cartridge');
+	('AM0005', '9mm'),
+	('AM0006', '.45 ACP'),
+	('AM0007', '5.56x45mm'),
+	('AM0008', '7.62x39mm'),
+	('AM0009', '.308 Winchester'),
+	('AM0010', '.30-06'),
+	('AM0011', '.357 Magnum'),
+	('AM0012', '.45 Magnum'),
+	('AM0013', '.50 BMG');
 
 -- Weapon Ammo AB
 INSERT INTO WeaponAmmo
