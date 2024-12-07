@@ -486,15 +486,56 @@ VALUES
     ('IT0049', 	'TK0001',	'Fresh Cabbage',	NULL),
     ('IT0050', 	'TK0001',	'Wheat',	NULL),
     ('IT0051', 	'TK0001',	'Fresh Corn',	NULL),
-    ('IT0052', 	'TK0001',	'Fresh Bell Pepper',	NULL);
+    ('IT0052', 	'TK0001',	'Fresh Bell Pepper',	NULL),
+    ('IT0053',	'TK0002',	'Submachine Gun',	        'Useful against groups, though it burns through ammo.'),
+    ('IT0054',	'TK0002',	'Sporting Rifle',	        'A quick and reliable semi-automatic rifle.'),
+    ('IT0055',	'TK0002',	'Hunting Rifle',	        'A simple yet effective bolt-action rifle. Best used in a defensive position.'),
+    ('IT0056',	'TK0002',	'Assault Rifle',	        'A fully-automatic military rifle.'),
+    ('IT0057',	'TK0002',	'Revolver',	                'Pretty big for a handgun.'),
+    ('IT0058',	'TK0002',	'Sniper Rifle',	            'Huge in both size and caliber, and impractical for most situations.');
     
 
 -- Inventory LR
 
 -- Ammo AB
 -- ammo key formatted as 'AM0000'
+INSERT INTO Ammo
+VALUES
+	('AM0001', 'Rock'),
+	('AM0002', 'Steel Ball'),
+	('AM0003', '12-Gauge Buckshot'),
+	('AM0004', '12-Gauge Slug'),
+	('AM0005', '9mm Cartridge'),
+	('AM0006', '.45 ACP Cartridge'),
+	('AM0007', '5.56x45mm Cartridge'),
+	('AM0008', '7.62x39mm Cartridge'),
+	('AM0009', '.308 Winchester Cartridge'),
+	('AM0010', '.30-06 Cartridge'),
+	('AM0011', '.357 Magnum Cartridge'),
+	('AM0012', '.45 Magnum Cartridge'),
+	('AM0013', '.50 BMG Cartridge');
 
 -- Weapon Ammo AB
+INSERT INTO WeaponAmmo
+VALUES
+	('IT0003', 'AM0001'),
+	('IT0003', 'AM0002'),
+	('IT0011', 'AM0003'),
+	('IT0011', 'AM0004'),
+	('IT0012', 'AM0005'),
+	('IT0012', 'AM0006'),
+	('IT0053', 'AM0005'),
+	('IT0053', 'AM0006'),
+	('IT0054', 'AM0007'),
+	('IT0054', 'AM0008'),
+	('IT0055', 'AM0009'),
+	('IT0055', 'AM0010'),
+	('IT0056', 'AM0007'),
+	('IT0056', 'AM0008'),
+	('IT0057', 'AM0011'),
+	('IT0057', 'AM0012'),
+	('IT0058', 'AM0013');
+
 
 -- Currency AH
 
