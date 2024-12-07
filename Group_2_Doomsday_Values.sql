@@ -323,8 +323,8 @@ VALUES
     ('WR0018', 'RT0007', 'Major', 'The second-in-command. Trains and leads the soldiers.'),
     ('WR0019', 'RT0007', 'General', 'The highest rank in the military.'),
     ('WR0020', 'RT0008', 'Council', 'An elected member of a group that makes laws and major decisions.'),
-    ('WR0020', 'RT0008', 'Judge', 'An elected member who presides over court proceedings.'),
-    ('WR0021', 'RT0008', 'Scientist', 'Studies the Zombie virus looking for a cure.');
+    ('WR0021', 'RT0008', 'Judge', 'An elected member who presides over court proceedings.'),
+    ('WR0022', 'RT0008', 'Scientist', 'Studies the Zombie virus looking for a cure.');
 
 -- People LR
 -- people key formatted as 'PE0000'
@@ -486,15 +486,56 @@ VALUES
     ('IT0049', 	'TK0001',	'Fresh Cabbage',	NULL),
     ('IT0050', 	'TK0001',	'Wheat',	NULL),
     ('IT0051', 	'TK0001',	'Fresh Corn',	NULL),
-    ('IT0052', 	'TK0001',	'Fresh Bell Pepper',	NULL);
+    ('IT0052', 	'TK0001',	'Fresh Bell Pepper',	NULL),
+    ('IT0053',	'TK0002',	'Submachine Gun',	        'Useful against groups, though it burns through ammo.'),
+    ('IT0054',	'TK0002',	'Sporting Rifle',	        'A quick and reliable semi-automatic rifle.'),
+    ('IT0055',	'TK0002',	'Hunting Rifle',	        'A simple yet effective bolt-action rifle. Best used in a defensive position.'),
+    ('IT0056',	'TK0002',	'Assault Rifle',	        'A fully-automatic military rifle.'),
+    ('IT0057',	'TK0002',	'Revolver',	                'Pretty big for a handgun.'),
+    ('IT0058',	'TK0002',	'Sniper Rifle',	            'Huge in both size and caliber, and impractical for most situations.');
     
 
 -- Inventory LR
 
 -- Ammo AB
 -- ammo key formatted as 'AM0000'
+INSERT INTO Ammo
+VALUES
+	('AM0001', 'Rock'),
+	('AM0002', 'Steel Ball'),
+	('AM0003', '12-Gauge Buckshot'),
+	('AM0004', '12-Gauge Slug'),
+	('AM0005', '9mm NATO'),
+	('AM0006', '.45 ACP'),
+	('AM0007', '5.56x45mm NATO'),
+	('AM0008', '7.62x39mm'),
+	('AM0009', '.308 Winchester'),
+	('AM0010', '.30-06 Springfield'),
+	('AM0011', '.357 Magnum'),
+	('AM0012', '.45 Magnum'),
+	('AM0013', '.50 BMG');
 
 -- Weapon Ammo AB
+INSERT INTO WeaponAmmo
+VALUES
+	('IT0003', 'AM0001'),
+	('IT0003', 'AM0002'),
+	('IT0011', 'AM0003'),
+	('IT0011', 'AM0004'),
+	('IT0012', 'AM0005'),
+	('IT0012', 'AM0006'),
+	('IT0053', 'AM0005'),
+	('IT0053', 'AM0006'),
+	('IT0054', 'AM0007'),
+	('IT0054', 'AM0008'),
+	('IT0055', 'AM0009'),
+	('IT0055', 'AM0010'),
+	('IT0056', 'AM0007'),
+	('IT0056', 'AM0008'),
+	('IT0057', 'AM0011'),
+	('IT0057', 'AM0012'),
+	('IT0058', 'AM0013');
+
 
 -- Currency AH
 
