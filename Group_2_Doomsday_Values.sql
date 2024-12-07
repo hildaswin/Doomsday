@@ -468,9 +468,24 @@ VALUES
     ('IT0033',	'TK0007',	'Blazer',	                'Some rips and tears, but perfect for completing business.'),
     ('IT0034',	'TK0007',	'Dress Shoes',	            'Some rips and tears, but perfect for completing business.'),
     ('IT0035',	'TK0010',	'Mixed Seeds Packets',   	'No idea what these might contain.'),
-    ('IT0036',	'TK0010',	'Bobby Pin',                 'Could be used for hair. Might be able to pick a lock with the right skills...'),
+    ('IT0036',	'TK0010',	'Bobby Pin',                 'Could be used for hair. Might be able to pick a lock with the right skills...')
     ('IT0037',  'TK0008',       'Rum',                       'qty in oz'),
-    ('IT0038',  'TK0008',       'Rubbing Alcohol',           'qty in oz');
+    ('IT0038',  'TK0008',       'Rubbing Alcohol',           'qty in oz'),
+    ('IT0039', 	'TK0001',	'Fresh Potatoes',	NULL),
+    ('IT0040', 	'TK0001',	'Fresh Carrots',	NULL),
+    ('IT0041', 	'TK0001',	'Fresh Green Beans',	NULL),
+    ('IT0042', 	'TK0001',	'Fresh Peas',	NULL),
+    ('IT0043', 	'TK0001',	'Fresh Lettuce',	NULL),
+    ('IT0044', 	'TK0001',	'Fresh Tomatoes',	NULL),
+    ('IT0045', 	'TK0001',	'Fresh Chives',	NULL),
+    ('IT0046', 	'TK0001',	'Fresh Basil',	NULL),
+    ('IT0047', 	'TK0001',	'Fresh Spinach',	NULL),
+    ('IT0048', 	'TK0001',	'Fresh Strawberries',	NULL),
+    ('IT0049', 	'TK0001',	'Fresh Cabbage',	NULL),
+    ('IT0050', 	'TK0001',	'Wheat',	NULL),
+    ('IT0051', 	'TK0001',	'Fresh Corn',	NULL),
+    ('IT0052', 	'TK0001',	'Fresh Bell Pepper',	NULL);
+    
 
 -- Inventory LR
 
