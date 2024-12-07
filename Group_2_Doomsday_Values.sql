@@ -285,8 +285,44 @@ VALUES
 -- Role Types AH
 -- role types key formatted as 'RT0000'
 
+INSERT INTO RoleTypes
+VALUES
+    ('RT0001', 'Runner'),
+    ('RT0002', 'Farmer'),
+    ('RT0003', 'Crafter'),
+    ('RT0004', 'Caretaker'),
+    ('RT0005', 'Teacher'),
+    ('RT0006', 'Healthcare'),
+    ('RT0007', 'Military'),
+    ('RT0008', 'Government');
+
 -- Work Roles AH
 -- work roles key formatted as 'WR0000'
+
+INSERT INTO WorkRoles
+VALUES
+    ('WR0001', 'RT0001', 'Messenger', 'Delivers messages between alliances.'),
+    ('WR0002', 'RT0001', 'Collector', 'Goes out to find and collect items/resources.'),
+    ('WR0003', 'RT0001', 'Scout', 'Scouts for new locations and helps to keep an eye on known locations.'),
+    ('WR0004', 'RT0002', 'Gardener', 'Takes care of the gardens.'),
+    ('WR0005', 'RT0002', 'Livestock', 'Takes care of the livestock.'),
+    ('WR0006', 'RT0003', 'Leather Artisan', 'Makes items out of leather.'),
+    ('WR0007', 'RT0003', 'Tailor', 'Makes items out of cloths.'),
+    ('WR0008', 'RT0003', 'Black Smith', 'Makes items out of metals.'),
+    ('WR0009', 'RT0004', 'Child Caretaker', 'Takes care of small children.'),
+    ('WR0010', 'RT0004', 'Elder Caretaker', 'Takes care of the elderly.'),
+    ('WR0011', 'RT0005', 'Academics', 'Teaches the children subjects such as math, reading, writing.'),
+    ('WR0012', 'RT0005', 'Survival', 'Teaches the children survival skills such as safe plants and shelter making.'),
+    ('WR0013', 'RT0005', 'Weapons', 'Teaches the children offensive and defensive weapon skills.'),
+    ('WR0014', 'RT0006', 'Nurse', 'Assists and learns from the doctor to one day be one if needed.'),
+    ('WR0015', 'RT0006', 'Doctor', 'Treats sickness, injuries, and performs surgeries.'),
+    ('WR0016', 'RT0006', 'Nurse', 'Teaches the children offensive and defensive weapon skills.'),
+    ('WR0017', 'RT0007', 'Soldier', 'All 16+ year old able-bodied citizens. The first line of attack and defense.'),
+    ('WR0018', 'RT0007', 'Major', 'The second-in-command. Trains and leads the soldiers.'),
+    ('WR0019', 'RT0007', 'General', 'The highest rank in the military.'),
+    ('WR0020', 'RT0008', 'Council', 'An elected member of a group that makes laws and major decisions.'),
+    ('WR0020', 'RT0008', 'Judge', 'An elected member who presides over court proceedings.'),
+    ('WR0021', 'RT0008', 'Scientist', 'Studies the Zombie virus looking for a cure.');
 
 -- People LR
 -- people key formatted as 'PE0000'
@@ -432,7 +468,9 @@ VALUES
     ('IT0033',	'TK0007',	'Blazer',	                'Some rips and tears, but perfect for completing business.'),
     ('IT0034',	'TK0007',	'Dress Shoes',	            'Some rips and tears, but perfect for completing business.'),
     ('IT0035',	'TK0010',	'Mixed Seeds Packets',   	'No idea what these might contain.'),
-    ('IT0036',	'TK0010',	'Bobby Pin',                 'Could be used for hair. Might be able to pick a lock with the right skills...');
+    ('IT0036',	'TK0010',	'Bobby Pin',                 'Could be used for hair. Might be able to pick a lock with the right skills...'),
+    ('IT0037',  'TK0008',       'Rum',                       'qty in oz'),
+    ('IT0038',  'TK0008',       'Rubbing Alcohol',           'qty in oz');
 
 -- Inventory LR
 
@@ -442,3 +480,14 @@ VALUES
 -- Weapon Ammo AB
 
 -- Currency AH
+
+INSERT INTO Currency
+VALUES
+    ('IT0017', 5),
+    ('IT0023', 1),
+    ('IT0024', 10),
+    ('IT0025', 1),
+    ('IT0026', 5),
+    ('IT0027', 5),
+    ('IT0037', 10),
+    ('IT0038', 20);
