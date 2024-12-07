@@ -26,7 +26,11 @@ VALUES
     ('LO0003',	'New York',	'LT0001',	40.72391574,	-73.98861745,	NULL,		0,	'2046-04-11'),
     ('LO0004',	'Chicago',	'LT0001',	41.87299696,	-87.63996336,	NULL,		0,	'2045-12-06'),
     ('LO0005',	'Novac',	'LT0001',	35.82749019,	-114.9364581,	NULL,		1,	'2046-04-11'),
-    ('LO0006',	'Ciudad de la Muerte',	'LT0001',	43.26197918,	-5.307890758,	NULL,		0,	'2045-12-20');
+    ('LO0006',	'Ciudad de la Muerte',	'LT0001',	43.26197918,	-5.307890758,	NULL,		0,	'2045-12-20'),
+	('LO0007',	'Heart of Sahara',	'LT0003',	22.704167,	17.558333,	'Location of a giant cave beneath the sandstones, entered by diving down an oasis.',		1,	'2048-08-12'),
+	('LO0008',	'White House',	'LT0008',	38.8977,	-77.0365,	'Home to the presidents of the former United States.',		0,	'2040-07-04')
+		
+;
 
 -- Water CB 
 -- water key formatted as 'WA0000'
@@ -62,7 +66,11 @@ VALUES
 	('WA0028', 'Marquette Lagoon', 2, 4, 'LO0004'),
 	('WA0029', 'Des Plaines River', 7, 10, 'LO0004'),
 	('WA0030', 'Salt Creek', 4, 10, 'LO0004'),
-	('WA0031', 'Bubbly Creek', 6, 10, 'LO0004')
+	('WA0031', 'Bubbly Creek', 6, 10, 'LO0004'),
+	('WA0032', 'Sahara''s Heart Oasis', 8, 7, 'LO0007'),
+	('WA0033', 'Tidal Basin', 5, 10, 'LO0008'),
+	('WA0034', 'Potomac River', 8, 10, 'LO0008'),
+	('WA0035', 'White House Rain Collection System', 8, 5, 'LO0008')
 ;
 
 -- Factions IA
@@ -176,7 +184,14 @@ VALUES
 	('LD0038', 'Soldier Field', 'LO0004', 2),
 	('LD0039', 'Martha Washington Apartments', 'LO0004', 10),
 	('LD0040', 'Newton Bateman Elementary School', 'LO0004', 4),
-	('LD0041', 'North Park Village Apartments', 'LO0004', 10)
+	('LD0041', 'North Park Village Apartments', 'LO0004', 10),
+	('LD0042', 'Saharan Heart Research Camp', 'LO0007', 6),
+	('LD0043', 'Abandoned Ydris-Clan Cave Hideout', 'LO0008', 2),
+	('LD0044', 'Treasury Building', 'LO0008', 6),
+	('LD0045', 'St. John''s Lafayette Square', 'LO0008', 5),
+	('LD0046', 'Blair House', 'LO0008', 4),
+	('LD0047', 'Eisenhower Executive Office Building', 'LO0008', 7),
+	('LD0048', 'White House Presidential Nuclear Bunker', 'LO0008', 9)
 ;
 
 -- Virus CB 
@@ -470,7 +485,7 @@ VALUES
     ('IT0033',	'TK0007',	'Blazer',	                'Some rips and tears, but perfect for completing business.'),
     ('IT0034',	'TK0007',	'Dress Shoes',	            'Some rips and tears, but perfect for completing business.'),
     ('IT0035',	'TK0010',	'Mixed Seeds Packets',   	'No idea what these might contain.'),
-    ('IT0036',	'TK0010',	'Bobby Pin',                 'Could be used for hair. Might be able to pick a lock with the right skills...')
+    ('IT0036',	'TK0010',	'Bobby Pin',                 'Could be used for hair. Might be able to pick a lock with the right skills...'),
     ('IT0037',  'TK0008',       'Rum',                       'qty in oz'),
     ('IT0038',  'TK0008',       'Rubbing Alcohol',           'qty in oz'),
     ('IT0039', 	'TK0001',	'Fresh Potatoes',	NULL),
