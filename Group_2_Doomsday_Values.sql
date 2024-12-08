@@ -28,8 +28,15 @@ VALUES
     ('LO0005',	'Novac',	'LT0001',	35.82749019,	-114.9364581,	NULL,		1,	'2046-04-11'),
     ('LO0006',	'Ciudad de la Muerte',	'LT0001',	43.26197918,	-5.307890758,	NULL,		0,	'2045-12-20'),
 	('LO0007',	'Heart of Sahara',	'LT0003',	22.704167,	17.558333,	'Location of a giant cave beneath the sandstones, entered by diving down an oasis.',		1,	'2048-08-12'),
-	('LO0008',	'White House',	'LT0008',	38.8977,	-77.0365,	'Home to the presidents of the former United States.',		0,	'2040-07-04')
-		
+	('LO0008',	'White House',	'LT0008',	38.8977,	-77.0365,	'Home to the presidents of the former United States.',		0,	'2040-07-04'),
+	('LO0009',	'Great Barrier Reef',	'LT0002',	-18.2871,	147.6992,	'Reef full of interesting mutated sea creatures.',		0,	'2061-12-16'),
+	('LO0010',	'Kashiwazaki-Kariwa Nuclear Power Plant',	'LT0004',	37.428334,	138.601667,	'Site of the recently powered nuclear power plant.',		0,	'2047-06-23'),
+	('LO0011',	'Amazon Rainforest',	'LT0006',	-3.4653,	-62.2159,	'Rainforest full of threats.',		0,	'2039-03-07'),
+	('LO0012',	'Nuketown',	'LT0003',	37.1119,	-116.3048,	'Former testing site for US Nuclear Weapons',		0,	'2038-11-01'),
+	('LO0013',	'Grand Grace Greenhouse',	'LT0007',	44.416667,	-92.090277,	NULL,		0,	'2047-05-19'),
+	('LO0014',	'Oak Alley Plantation',	'LT0005',	30.0042,	-90.7760,	'Heavily guarded residential.',		1,	'2046-09-21'),
+	('LO0015',	'King''s Landing',	'LT0001',	42.639752,	18.110189,	'Residents renamed the place out of a fictional place.',		0,	'2045-07-01'),
+	('LO0016',	'Matamata, New Zealand',	'LT0005',	-37.8722,	175.6829,	'A peaceful remote village.',		1,	'2042-12-19')
 ;
 
 -- Water CB 
@@ -70,7 +77,32 @@ VALUES
 	('WA0032', 'Sahara''s Heart Oasis', 8, 7, 'LO0007'),
 	('WA0033', 'Tidal Basin', 5, 10, 'LO0008'),
 	('WA0034', 'Potomac River', 8, 10, 'LO0008'),
-	('WA0035', 'White House Rain Collection System', 8, 5, 'LO0008')
+	('WA0035', 'White House Rain Collection System', 8, 5, 'LO0008'),
+	('WA0036', 'Pacific Ocean', 4, 10, 'LO0009'),
+	('WA0037', 'Underwater Base Water Filtration Machine', 10, 8, 'LO0009'),
+	('WA0038', 'Sea of Japan', 4, 10, 'LO0010'),
+	('WA0039', 'Kashiwazaki-Kariwa Water Cooling System', 1, 4, 'LO0010'),
+	('WA0040', 'Rio Urucu', 3, 5, 'LO0011'),
+	('WA0041', 'Lago Mamia', 4, 5, 'LO0011'),
+	('WA0042', 'Lago Arua', 2, 5, 'LO0011'),
+	('WA0043', 'Amazon River', 1, 10, 'LO0011'),
+	('WA0044', 'Rio Negro', 4, 10, 'LO0011'),
+	('WA0045', 'Rio Apaporis', 3, 8, 'LO0011'),
+	('WA0046', 'Represa de Balbina', 5, 7, 'LO0011'),
+	('WA0047', 'Nuketown Well', 2, 1, 'LO0012'),
+	('WA0048', 'Mississippi River', 9, 10, 'LO0013'),
+	('WA0049', 'Chimney Lake', 6, 8, 'LO0013'),
+	('WA0050', 'Goose Pond', 5, 5, 'LO0013'),
+	('WA0051', 'Chippewa River', 7, 10, 'LO0013'),
+	('WA0052', 'Fortyacre Lake', 6, 9, 'LO0013'),
+	('WA0053', 'Lannahechee River', 4, 10, 'LO0014'),
+	('WA0054', 'Plantation Water Filtration System', 10, 10, 'LO0014'),
+	('WA0055', 'Batree Community Drainage Canal', 2, 4, 'LO0014'),
+	('WA0056', 'Blackwater Bay', 7, 10, 'LO0015'),
+	('WA0057', 'Blackwater River', 6, 10, 'LO0015'),
+	('WA0058', 'Shire Filtration System', 10, 5, 'LO0015'),
+	('WA0059', 'Dark Forest Creek', 2, 4, 'LO0015'),
+	('WA0060', 'Shire Water Collection System', 7, 5, 'LO0015')
 ;
 
 -- Factions IA
@@ -191,7 +223,38 @@ VALUES
 	('LD0045', 'St. John''s Lafayette Square', 'LO0008', 5),
 	('LD0046', 'Blair House', 'LO0008', 4),
 	('LD0047', 'Eisenhower Executive Office Building', 'LO0008', 7),
-	('LD0048', 'White House Presidential Nuclear Bunker', 'LO0008', 9)
+	('LD0048', 'White House Staff Nuclear Bunker', 'LO0008', 9),
+	('LD0049', 'Shallow Water Underwater Base', 'LO0009', 2),
+	('LD0050', 'Bloody Ravine Underwater Base', 'LO0009', 4),
+	('LD0051', 'Alien Research Facility', 'LO0009', 1),
+	('LD0052', 'Alien Surface Tower', 'LO0009', 6),
+	('LD0053', 'Underwater Drop Off Overlook', 'LO0009', 8),
+	('LD0054', 'Power Plant Military Installation', 'LO0010', 3),
+	('LD0055', 'Power Plant Emergency Bunker', 'LO0010', 7),
+	('LD0056', 'Kariwa Elementary School', 'LO0010', 5),
+	('LD0057', 'Abandoned Logging Factory', 'LO0011', 2),
+	('LD0058', 'Abandoned Mass Mining Site', 'LO0011', 1),
+	('LD0059', 'Amber Excavation Camp', 'LO0011', 2),
+	('LD0060', 'Temple of Crystal Skull', 'LO0011', 3),
+	('LD0061', 'Yanomami Tribe Village', 'LO0011', 6),
+	('LD0062', 'Abandoned Expedition Site', 'LO0011', 5),
+	('LD0063', 'US Military Base', 'LO0012', 6),
+	('LD0064', 'Nuclear Testing Overlook', 'LO0012', 5),
+	('LD0065', 'Nuketown Residence', 'LO0012', 1),
+	('LD0066', 'Greenhouse Grace Guards Base', 'LO0013', 7),
+	('LD0067', 'Greenhouse Grace Staff Residence', 'LO0013', 8),
+	('LD0068', 'Greenhouse Grace Storage Facility', 'LO0013', 1),
+	('LD0069', 'Oak Alley Residence', 'LO0014', 8),
+	('LD0070', 'Plantation Huts', 'LO0014', 4),
+	('LD0071', 'Oak Alley Manor', 'LO0014', 10),
+	('LD0072', 'Oak Alley Emergency Bunker', 'LO0014', 10),
+	('LD0073', 'Red Keep', 'LO0015', 8),
+	('LD0074', 'King''s Landing Apartments', 'LO0015', 9),
+	('LD0075', 'Dragon Training Grounds View', 'LO0015', 6),
+	('LD0076', 'High Septon Chapel', 'LO0015', 5),
+	('LD0077', 'Baggin Residence', 'LO0016', 9),
+	('LD0078', 'Gamgee Farm', 'LO0016', 7),
+	('LD0079', 'Grey Labarotories', 'LO0016', 5)
 ;
 
 -- Virus CB 
@@ -222,7 +285,14 @@ VALUES
 	('VT0022', 'Coaguliro', 'Blood becomes thicker.', 'Variant of VT0005', 9),
 	('VT0023', 'Crystemia', 'Blood crystallizes.', 'Variant of VT0005', 10),
 	('VT0024', 'Sleeping Beauty Virus', 'Increased frequency and duration of sleepwalking episodes.', 'Alien Parasite of Michigan.', 4),
-    ('VT0025', 'Las Plagas Parasite', 'Complete takeover by the hive', 'Las Plagas Cult', 7)
+    ('VT0025', 'Las Plagas Parasite', 'Complete takeover by the hive', 'Las Plagas Cult', 7),
+	('VT0026', 'Vampire Virus', 'Severe reaction to sunlight exposure.', 'Mutated Measles Virus', 8),
+	('VT0027', 'Simian Flu', 'Severe neuro-degeneration.', 'Gen-Sys Labarotories', 9),
+	('VT0028', 'Wairus', 'Slows neuron reaction time.', 'Sloths of the Amazon Rainforest.', 3),
+	('VT0029', 'Milky Way Strain', 'Causes dizziness when looking up.', 'Alien Parasite of Nevada', 2),
+	('VT0030', 'Bug''s Blood', 'Causes sticky sweats.', 'Earthworms of Louisiana', 3),
+	('VT0031', 'Cactus Sting', 'Constant urge to itch infected areas.', 'Fleas of Nile River', 5),
+	('VT0032', 'Greyscale', 'Causes hard grey skin that decays overtime.', 'Alien Parasites of Mount Vesuvius', 9)
 ;
 
 -- Virus Transmissions CB
@@ -296,7 +366,28 @@ VALUES
 	('VT0023', 'TM0009'),
 	('VT0024', 'TM0006'),
 	('VT0024', 'TM0007'),
-    ('VT0025', 'TM0009')
+    ('VT0025', 'TM0009'),
+	('VT0026', 'TM0008'),
+	('VT0026', 'TM0009'),
+	('VT0027', 'TM0001'),
+	('VT0027', 'TM0006'),
+	('VT0027', 'TM0007'),
+	('VT0028', 'TM0004'),
+	('VT0028', 'TM0009'),
+	('VT0029', 'TM0003'),
+	('VT0029', 'TM0005'),
+	('VT0029', 'TM0006'),
+	('VT0029', 'TM0008'),
+	('VT0029', 'TM0009'),
+	('VT0030', 'TM0004'),
+	('VT0030', 'TM0008'),
+	('VT0030', 'TM0009'),
+	('VT0031', 'TM0002'),
+	('VT0031', 'TM0003'),
+	('VT0031', 'TM0005'),
+	('VT0031', 'TM0008'),
+	('VT0032', 'TM0001'),
+	('VT0032', 'TM0002')
 ;
 
 -- Role Types AH
