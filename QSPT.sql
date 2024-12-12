@@ -21,8 +21,8 @@ GO;
 SELECT t.transmissionMethodKey AS TransmissionID,
 	t.transmissionMethod AS TransmissionMethod,
 	COUNT(vt.virusKey) AS NumOfViruses
-FROM TransmissionMethod AS t
-LEFT JOIN VirusTransmissionMethod AS vt
+FROM VirusTransmission AS t
+LEFT JOIN VirusTransmissionDetails AS vt
 	ON t.transmissionMethodKey = vt.transmissionMethodKey
 GROUP BY t.transmissionMethodKey,
 	t.transmissionMethod
@@ -89,8 +89,8 @@ BEGIN
 					v.virusName AS VirusName,
 					t.transmissionMethodKey AS TransmissionID,
 					t.transmissionMethod AS TransmissionMethod
-				FROM TransmissionMethod AS t
-				INNER JOIN VirusTransmissionMethod AS vt
+				FROM VirusTransmission AS t
+				INNER JOIN VirusTransmissionDetails AS vt
 					ON t.transmissionMethodKey = vt.transmissionMethodKey
 				INNER JOIN Virus AS v
 					ON vt.virusKey = v.virusKey
