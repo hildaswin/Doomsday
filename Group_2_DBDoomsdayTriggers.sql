@@ -24,3 +24,24 @@ BEGIN
 	END
 END;
 GO
+
+-- Trigger to remind user to enter a transmission method for the newly entered virus, if there's any.
+CREATE TRIGGER trg_TriggerWhenNewVirusRecorded
+ON Virus
+AFTER INSERT
+AS
+BEGIN
+	DECLARE @message VARCHAR(200) = 'Remember to enter transmission methods for the new virus, if any.';
+	RAISERROR(@message, 5, 1);
+END;
+GO
+-- Trigger to remind user to enter the lodging or water sources for the newly entered location, if there's any.
+CREATE TRIGGER trg_TriggerWhenNewLocationRecorded
+ON Locations
+AFTER INSERT
+AS
+BEGIN
+	DECLARE @message VARCHAR(200) = 'Remember to enter lodging and water sources for the new location, if any.';
+	RAISERROR(@message, 5, 1);
+END;
+GO
