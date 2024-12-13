@@ -153,7 +153,7 @@ CREATE TABLE Zombies(
 CREATE TABLE Plants(
     plantKey VARCHAR(8) PRIMARY KEY NOT NULL,
     plantName VARCHAR(20) UNIQUE NOT NULL,
-    plantWaterFequency INT NOT NULL DEFAULT 1,
+    plantWaterFrequency INT NOT NULL DEFAULT 1,
     plantInfo TEXT NULL
 );
 
