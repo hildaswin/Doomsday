@@ -32,7 +32,7 @@ CREATE TABLE Locations(
 
 CREATE TABLE Water(
     waterKey VARCHAR(8) PRIMARY KEY NOT NULL,
-    waterName VARCHAR(50) NOT NULL,
+    waterName VARCHAR(20) NOT NULL,
     waterSafetyRating TINYINT NULL CHECK(waterSafetyRating BETWEEN 1 AND 10),
     waterAbundanceRating TINYINT NULL CHECK(waterAbundanceRating BETWEEN 1 AND 10),
     locationKey VARCHAR(8) NOT NULL FOREIGN KEY REFERENCES Locations(locationKey)
@@ -81,7 +81,7 @@ CREATE TABLE Power(
 
 CREATE TABLE Lodging(
     lodgingKey VARCHAR(8) PRIMARY KEY NOT NULL,
-    lodgingName VARCHAR(50) NOT NULL,
+    lodgingName VARCHAR(20) NOT NULL,
     locationKey VARCHAR(8) NOT NULL FOREIGN KEY REFERENCES Locations(locationKey),
     lodgingComfortRating TINYINT NULL CHECK(lodgingComfortRating BETWEEN 1 AND 10)
 );
@@ -90,9 +90,9 @@ CREATE TABLE Lodging(
 
 CREATE TABLE Virus(
     virusKey VARCHAR(8) PRIMARY KEY NOT NULL,
-    virusName VARCHAR(50) UNIQUE NOT NULL,
-    virusEffect VARCHAR(100) NULL,
-    virusSource VARCHAR(50) NULL,
+    virusName VARCHAR(20) UNIQUE NOT NULL,
+    virusEffect VARCHAR(50) NULL,
+    virusSource VARCHAR(20) NULL,
     virusDangerRating TINYINT NULL CHECK(virusDangerRating BETWEEN 1 AND 10)
 );
 
