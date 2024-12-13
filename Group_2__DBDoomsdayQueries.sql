@@ -142,16 +142,33 @@ LEFT JOIN Lodging AS lg
 WHERE lg.locationKey IS NULL;
 GO
 
+	
 -- Retrieves all spots in the Greenhouse, the plants growing in them, the date they were last watered,
 -- and calculates when next they should be watered.
 CREATE VIEW view_GreenhouseNextWaterDate -- AB
 AS
-	SELECT gh.spotKey AS Spot_Key,
-		pl.plantWaterFrequency AS Water_Frequency,
-		pl.plantName AS Plant_Name, 
-		gh.lastWatered AS Last_Watered,
-		FORMAT(DATEADD(DAY, pl.plantWaterFrequency, gh.lastWatered), 'd') AS Next_Watering
+	SELECT gh.spotKey AS 'Spot Key',
+		pl.plantWaterFrequency AS 'Water Frequency',
+		pl.plantName AS 'Plant Name', 
+		FORMAT(gh.lastWatered, 'd') AS 'Last Watered',
+		FORMAT(DATEADD(DAY, pl.plantWaterFrequency, gh.lastWatered), 'd') AS 'Next Watering'
 	FROM Greenhouse AS gh
 	JOIN Plants AS pl ON pl.plantKey = gh.plantKey
+	ORDER BY DATEADD(DAY, pl.plantWaterFrequency, gh.lastWatered) OFFSET 0 ROWS;
+GO
+
+
+-- Retrieves spots in the Greenhouse that need to be watered
+-- Default lastWatered values are set in the year 2046, so this won't return any rows for another 22 years.
+CREATE VIEW view_GreenhouseNeedsWatering -- AB
+AS
+	SELECT gh.spotKey AS Spot_Key,
+		pl.plantWaterFrequency AS 'Water Frequency',
+		pl.plantName AS 'Plant Name', 
+		FORMAT(gh.lastWatered, 'd') AS 'Last Watered',
+		DATEDIFF(Day, DATEADD(DAY, pl.plantWaterFrequency, gh.lastWatered), GETDATE()) AS 'Days Since Plant Needed Water'
+	FROM Greenhouse AS gh
+	JOIN Plants AS pl ON pl.plantKey = gh.plantKey
+	WHERE DATEADD(DAY, pl.plantWaterFrequency, gh.lastWatered) <= GETDATE()
 	ORDER BY DATEADD(DAY, pl.plantWaterFrequency, gh.lastWatered) OFFSET 0 ROWS;
 GO
