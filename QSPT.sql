@@ -7,17 +7,18 @@ GO;
 -- ===== Queries
 
 
--- Count the number of viruses for each danger rating, 
--- order highest danger first.
+-- Count the number of viruses for each danger rating.
+CREATE VIEW view_VirusCountForEachDangerRating 
+AS
 SELECT virusDangerRating AS DangerRating,
 	COUNT(virusKey) AS NumOfViruses
 FROM Virus
 GROUP BY virusDangerRating
-ORDER BY virusDangerRating DESC;
-GO;
+GO
 
--- Count the number of viruses for each transmission method, 
--- order most used transmission method first.
+-- Count the number of viruses for each transmission method.
+CREATE VIEW view_VirusCountForEachTransmission
+AS
 SELECT t.transmissionMethodKey AS TransmissionID,
 	t.transmissionMethod AS TransmissionMethod,
 	COUNT(vt.virusKey) AS NumOfViruses
@@ -26,12 +27,12 @@ LEFT JOIN VirusTransmissionDetails AS vt
 	ON t.transmissionMethodKey = vt.transmissionMethodKey
 GROUP BY t.transmissionMethodKey,
 	t.transmissionMethod
-ORDER BY COUNT(vt.virusKey) DESC;
-GO;
+GO
 
--- Determine the best water source out of all location,
--- to determine where best to settle.
+-- Determine the water source rating of all location.
 -- Best water source means the average value between safety and abundance rating is 10.
+CREATE VIEW view_WaterSourceRating
+AS
 SELECT w.waterName AS WaterSource,
 		w.locationKey AS LocationID,
 		l.locationName AS LocationName,
@@ -41,23 +42,12 @@ SELECT w.waterName AS WaterSource,
 FROM water AS w
 INNER JOIN locations AS l
 	ON w.locationKey = l.locationKey
-ORDER BY CAST(((w.waterSafetyRating + w.waterAbundanceRating) / 2.0) AS DECIMAL(3, 1)) DESC
-GO;
+GO
 
--- Top 10 most dangerous virus
-SELECT TOP 10
-	virusKey AS VirusID,
-	virusName AS VirusName,
-	virusEffect AS Effect,
-	virusDangerRating AS DangerRating
-FROM Virus
-ORDER BY virusDangerRating DESC;
-GO;
-
--- Top 10 best lodgings.
--- Only includes lodgings from safe locations.
-SELECT TOP 10
-	lg.locationKey AS LocationID,
+-- Lodgings from safe locations.
+CREATE VIEW view_SafeLodgings
+AS
+SELECT lg.locationKey AS LocationID,
 	lc.locationName AS LocationName,
 	lg.lodgingKey AS LodgingID,
 	lg.lodgingName AS LodgingName,
@@ -66,8 +56,7 @@ FROM Lodging AS lg
 INNER JOIN Locations AS lc
 	ON lg.locationKey = lc.locationKey
 WHERE lc.locationSafe = 1
-ORDER BY lg.lodgingComfortRating DESC;
-GO;
+GO
 
 
 
@@ -116,7 +105,7 @@ BEGIN
 		@virusKey, 
 		@virusName;
 END;
-GO;
+GO
 
 -- Updates the rating of a record in a table.
 -- The rating column must contain the word 'rating', otherwise,
@@ -151,7 +140,7 @@ BEGIN
 		PRINT 'The rating column must contain the word ''rating''.';
 	END
 END;
-GO;
+GO
 
 -- Best water sources in a location,
 -- where best source means the average value between the safety and abundance rating is 10.
@@ -195,7 +184,7 @@ BEGIN
 		@locationKey, 
 		@locationName;
 END;
-GO;
+GO
 
 -- Most comfortable lodging in the specified location,
 -- passing the locations id or name.
@@ -238,7 +227,7 @@ BEGIN
 		@locationKey, 
 		@locationName;
 END;
-GO;
+GO
 
 
 
@@ -266,4 +255,4 @@ BEGIN
 		RAISERROR(@message, 16, 1);
 	END
 END;
-GO;
+GO
