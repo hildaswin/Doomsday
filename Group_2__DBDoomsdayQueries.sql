@@ -7,7 +7,7 @@ AS
 SELECT virusDangerRating AS DangerRating,
 	COUNT(virusKey) AS NumOfViruses
 FROM Virus
-GROUP BY virusDangerRating
+GROUP BY virusDangerRating;
 GO
 
 -- Count the number of viruses for each transmission method.
@@ -20,7 +20,7 @@ FROM VirusTransmission AS t
 LEFT JOIN VirusTransmissionDetails AS vt
 	ON t.transmissionMethodKey = vt.transmissionMethodKey
 GROUP BY t.transmissionMethodKey,
-	t.transmissionMethod
+	t.transmissionMethod;
 GO
 
 -- Determine the water source rating of all location.
@@ -35,7 +35,7 @@ SELECT w.waterName AS WaterSource,
 		CAST(((w.waterSafetyRating + w.waterAbundanceRating) / 2.0) AS DECIMAL(3, 1)) AS SourceRating
 FROM water AS w
 INNER JOIN locations AS l
-	ON w.locationKey = l.locationKey
+	ON w.locationKey = l.locationKey;
 GO
 
 -- Lodgings from safe locations.
@@ -49,7 +49,7 @@ SELECT lg.locationKey AS LocationID,
 FROM Lodging AS lg
 INNER JOIN Locations AS lc
 	ON lg.locationKey = lc.locationKey
-WHERE lc.locationSafe = 1
+WHERE lc.locationSafe = 1;
 GO
 
 -- Top 10 most dangerous virus
@@ -105,3 +105,39 @@ INNER JOIN Items i ON inv.itemKey = i.itemKey
 GROUP BY l.locationKey, l.locationName
 ORDER BY TotalItems DESC;
 GO;
+
+-- Retrieves all viruses without any recorded transmission methods.
+CREATE VIEW view_VirusWithoutTransmission
+AS
+SELECT v.virusKey,
+	v.virusName,
+	v.virusDangerRating
+FROM Virus AS v
+LEFT JOIN VirusTransmissionDetails AS vt
+	ON v.virusKey = vt.virusKey
+WHERE vt.transmissionMethodKey IS NULL;
+GO
+	
+-- Retrieves all locations without any recorded water sources.
+CREATE VIEW view_LocationWithoutWater
+AS
+SELECT lc.locationKey,
+	lc.locationName,
+	w.waterKey
+FROM Locations AS lc
+LEFT JOIN Water AS w
+	ON lc.locationKey = w.locationKey
+WHERE w.waterKey IS NULL;
+GO
+	
+-- Retrieves all locations without any recorded lodgings.
+CREATE VIEW view_LocationWithoutLodging
+AS
+SELECT lc.locationKey,
+	lc.locationName,
+	lg.lodgingKey
+FROM Locations AS lc
+LEFT JOIN Lodging AS lg
+	ON lc.locationKey = lg.locationKey
+WHERE lg.locationKey IS NULL;
+GO
