@@ -100,9 +100,9 @@ VALUES
 	('WA0055', 'Batree Community Drainage Canal', 2, 4, 'LO0014'),
 	('WA0056', 'Blackwater Bay', 7, 10, 'LO0015'),
 	('WA0057', 'Blackwater River', 6, 10, 'LO0015'),
-	('WA0058', 'Shire Filtration System', 10, 5, 'LO0015'),
-	('WA0059', 'Dark Forest Creek', 2, 4, 'LO0015'),
-	('WA0060', 'Shire Water Collection System', 7, 5, 'LO0015')
+	('WA0058', 'Shire Filtration System', 10, 5, 'LO0016'),
+	('WA0059', 'Dark Forest Creek', 2, 4, 'LO0016'),
+	('WA0060', 'Shire Water Collection System', 7, 5, 'LO0016')
 ;
 
 -- Factions IA
