@@ -52,29 +52,12 @@ INNER JOIN Locations AS lc
 WHERE lc.locationSafe = 1;
 GO
 
--- Top 10 most dangerous virus
-SELECT TOP 10
-	virusKey AS VirusID,
-	virusName AS VirusName,
-	virusEffect AS Effect,
-	virusDangerRating AS DangerRating
-FROM Virus
-ORDER BY virusDangerRating DESC;
-GO
-
--- Top 10 best lodgings.
--- Only includes lodgings from safe locations.
-SELECT TOP 10
-	lg.locationKey AS LocationID,
-	lc.locationName AS LocationName,
-	lg.lodgingKey AS LodgingID,
-	lg.lodgingName AS LodgingName,
-	lg.lodgingComfortRating AS ComfortRating
-FROM Lodging AS lg
-INNER JOIN Locations AS lc
-	ON lg.locationKey = lc.locationKey
-WHERE lc.locationSafe = 1
-ORDER BY lg.lodgingComfortRating DESC;
+-- View power structures that neeeds repair.
+CREATE VIEW view_NeedRepairPowerStructures
+AS
+SELECT *
+FROM Power
+WHERE powerStatus LIKE 'Needs Repair';
 GO
 
 -- Resources Shared Between Factions
