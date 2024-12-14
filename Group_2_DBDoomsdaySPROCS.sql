@@ -245,3 +245,28 @@ BEGIN
 END;
 GO
 
+--Shows all the people associated with a given faction
+
+CREATE PROCEDURE sp_FactionMembers
+	(
+	@factionName VARCHAR(75)
+	)
+AS
+	BEGIN
+		IF EXISTS(SELECT *
+			      FROM Factions
+				  WHERE factionName = @factionName
+				 )
+			BEGIN
+				SELECT *
+				FROM People AS pe
+				JOIN Factions AS fa ON fa.factionKey = pe.factionKey
+				WHERE pe.factionKey = (SELECT Factions.factionKey
+									   FROM Factions
+									   WHERE factionName = @factionName
+									  )
+			END
+		ELSE
+			PRINT 'No faction with that name';
+	END;
+GO
