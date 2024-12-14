@@ -172,3 +172,11 @@ AS
 	WHERE DATEADD(DAY, pl.plantWaterFrequency, gh.lastWatered) <= GETDATE()
 	ORDER BY DATEADD(DAY, pl.plantWaterFrequency, gh.lastWatered) OFFSET 0 ROWS;
 GO
+
+-- Retrieves everyone who isn't associated with a faction
+CREATE VIEW view_NotAssociatedWFaction
+AS
+	SELECT * 
+	FROM People AS pe
+	WHERE pe.factionKey IS NULL;
+GO
