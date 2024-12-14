@@ -163,3 +163,14 @@ AS
 	FROM People AS pe
 	WHERE pe.factionKey IS NULL;
 GO
+
+-- Retrieve currency total for each Faction by currency item
+CREATE VIEW view_CurrencyByFaction
+AS
+	SELECT f.factionName AS Faction, it.itemName AS Currency, c.value AS Value, iv.inventoryQty AS Ounces, SUM(c.value * iv.inventoryQty) AS 'Total Value'
+	FROM Currency AS c
+	INNER JOIN Items as it ON c.itemKey = it.itemKey
+	INNER JOIN Inventory AS iv ON c.itemKey = iv.itemKey
+	INNER JOIN Factions AS f ON iv.factionKey = f.factionKey
+	GROUP BY f.factionName, it.itemName, c.value, iv.inventoryQty;
+GO
