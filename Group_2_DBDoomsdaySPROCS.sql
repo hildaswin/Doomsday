@@ -1,5 +1,5 @@
 USE Doomsday
-GO;
+GO
 
 -- Retrieves the transmission methods for the specified virus,
 -- passing the virus id or name.

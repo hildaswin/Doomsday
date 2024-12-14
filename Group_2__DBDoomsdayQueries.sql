@@ -1,5 +1,5 @@
 USE Doomsday
-GO;
+GO
 
 -- Count the number of viruses for each danger rating.
 CREATE VIEW view_VirusCountForEachDangerRating 

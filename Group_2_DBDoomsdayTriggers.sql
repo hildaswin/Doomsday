@@ -1,5 +1,5 @@
 USE Doomsday
-GO;
+GO
 
 
 -- Triggers when a new virus or an old virus has been added/updated with a
