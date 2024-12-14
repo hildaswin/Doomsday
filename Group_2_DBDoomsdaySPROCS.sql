@@ -5,7 +5,7 @@ GO;
 -- passing the virus id or name.
 CREATE PROCEDURE sp_VirusTransmissionMethods
 	@virusKey VARCHAR(8) = Null,
-	@virusName VARCHAR(50) = Null
+	@virusName VARCHAR(20) = Null
 AS
 BEGIN
 	SET NOCOUNT ON;
@@ -39,7 +39,7 @@ BEGIN
 
 	EXEC sp_executesql @sql, 
 		N'@virusKey VARCHAR(8), 
-		@virusName VARCHAR(50)', 
+		@virusName VARCHAR(20)', 
 		@virusKey, 
 		@virusName;
 END;
@@ -269,4 +269,21 @@ AS
 		ELSE
 			PRINT 'No faction with that name';
 	END;
+GO
+
+-- Determines the virus based on the effect.
+CREATE PROCEDURE sp_VirusBasedOnEffect
+	@virusEffect VARCHAR(50)
+AS
+BEGIN
+	SET NOCOUNT ON;
+	
+	SELECT virusKey AS VirusID,
+		virusName AS VirusName,
+		virusEffect AS VirusEffect,
+		virusSource AS VirusSource,
+		virusDangerRating AS DangerRating
+	FROM Virus
+	WHERE virusEffect LIKE '%' + @virusEffect + '%';
+END;
 GO
